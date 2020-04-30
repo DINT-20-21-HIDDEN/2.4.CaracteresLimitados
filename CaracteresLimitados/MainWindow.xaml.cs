@@ -19,7 +19,7 @@ namespace CaracteresLimitados
         {
             CaracteresTextBlock.Text = MensajeTextBox.Text.Length.ToString() + "/" + maximoCaracteres.ToString();
 
-            if (MensajeTextBox.Text.Length == 140)
+            if (MensajeTextBox.Text.Length == maximoCaracteres)
             {
                 MensajeTextBox.IsReadOnly = true;
             }
